@@ -44,18 +44,20 @@ include "conexao.php";
                     <th>Preço</th>
                     <th>Categoria</th>
                 </tr>
-                <?php while ($cadastrar = mysqli_fetch_assoc($cadastrar_prato)) { ?>
+                <?php while ($cadastrar = mysqli_fetch_assoc($cadastrar_prato && $usuarios)) { ?>
                     <tr>
+                        <td><?php echo $usuarios["id_usuario"] ?></td>
+                        <td><?php echo $usuarios["nome"] ?></td>
+                        <td><?php echo $usuarios["email"] ?></td>
                         <td><?php echo $cadastrar_prato["id_prato"] ?></td>
-                        <td><?php echo $cadastrar_prato["id_usuario"] ?></td>
                         <td><?php echo $cadastrar_prato["nome"] ?></td>
                         <td><?php echo $cadastrar_prato["descricao"] ?></td>
                         <td><?php echo $cadastrar_prato["preco"] ?></td>
                         <td><?php echo $cadastrar_prato["categoria"] ?></td>
 
                         <td>
-                            <a href="public/editar.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Editar</a>
-                            <a href="public/excluir.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Excluir</a>
+                            <a href="editar.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Editar</a>
+                            <a href="excluir.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Excluir</a>
                         </td>
                     </tr>
                 <?php } ?>
