@@ -14,7 +14,8 @@
 </head>
 <body>
     <h1> Cadastro de Usuário </h1>
-    <label>Usuário:</label> 
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"> 
 
 
 </body>
