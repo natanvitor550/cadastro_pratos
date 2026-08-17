@@ -25,7 +25,7 @@ include "conexao.php";
 </div>
 
 <div class=flex>
-    <input type="submit" id="enviar" name="enviar">
+   <a href="http://localhost:8080/natan_barbosa_2026/cadastro_pratos/pratos_c.php"><button>Meu Botão</button></a>
 </div>
 </body>
 </html>
