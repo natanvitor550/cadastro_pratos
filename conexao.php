@@ -5,7 +5,7 @@ $usuario = "root";
 $senha = "root";
 $banco = "gerenciar_pratos";
 
-$conexao = new mysqli($host, $nome, $email, $banco);
+$conexao = new mysqli($host, $nome, $email, $db);
 
 if ($conexao->connect_error) {
     die("Erro na conexão com o banco: " . $conexao->connect_error);

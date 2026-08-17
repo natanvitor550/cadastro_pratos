@@ -10,8 +10,7 @@ CREATE TABLE usuarios (
 CREATE TABLE cadastro_prato (
     id_prato INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
-    CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) 
-    REFERENCES usuario(id),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
     nome VARCHAR (100) NOT NULL,
     descricao VARCHAR (500) NOT NULL,
     preco FLOAT NOT NULL,
