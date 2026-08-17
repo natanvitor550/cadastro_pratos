@@ -17,10 +17,19 @@
 
     <label for="nome"> Nome: </label>
     <input type="text" id="nome" name="nome">
-    
+
     <div class="flex">
-    <label for="descrição"> Descrição: </label>
-    <input type="text" id="descrição" name="descrição">
+    <label for="descricao"> Descrição: </label>
+    <input type="text" id="descricao" name="descricao">
+</div>
+
+<div class="flex">
+    <label for="preco"> Preço R$: </label>
+    <input type="number" id="preco" name="preco" min="10" max="500">
+</div>
+
+<div class="flex">
+     <input type="submit" id="enviar" name="enviar">
 </div>
 </body>
 </html>
