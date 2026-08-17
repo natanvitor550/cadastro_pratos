@@ -44,7 +44,14 @@ include "conexao.php";
                     <th>Preço</th>
                     <th>Categoria</th>
                 </tr>
+<<<<<<< HEAD
                 <?php while ($cadastrar = mysqli_fetch_assoc($cadastrar_prato && $usuarios)) { ?>
+=======
+                <?php
+                    $sql = "SELECT * FROM pratos";
+                    $cadastrar_prato = 
+                while ($cadastrar = mysqli_fetch_assoc($cadastrar_prato)) { ?>
+>>>>>>> 5213a908af91a0b3a5411b9c7046730e1370c06b
                     <tr>
                         <td><?php echo $usuarios["id_usuario"] ?></td>
                         <td><?php echo $usuarios["nome"] ?></td>
