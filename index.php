@@ -25,7 +25,15 @@ include "conexao.php";
 </div>
 
 <div class=flex>
-   <a href="http://localhost:8080/natan_barbosa_2026/cadastro_pratos/pratos_c.php"><button>Meu Botão</button></a>
+            <button type="submit">Enviar</button>
+</div>
+
+<div class=flex>
+   <a href="http://localhost:8080/natan_barbosa_2026/cadastro_pratos/pratos_c.php"><button>Avançar</button></a>
+</div>
+
+<div class=flex>
+   <a href="https://www.canva.com/design/DAHSjy8j5Qg/lGGlRs9PMWMJYIEjdCoSeg/edit"><button>EU DESISTO!!!</button></a>
 </div>
 </body>
 </html>
