@@ -1,4 +1,5 @@
 <?php
+include "conexao.php";
 
 ?>
 
@@ -31,5 +32,34 @@
 <div class="flex">
      <input type="submit" id="enviar" name="enviar">
 </div>
+
+<div>
+            <h2> Cadastrados</h2>
+            <table>
+                <tr>
+                    <th>ID_Prato</th>
+                    <th>ID_Usuário</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </tr>
+                <?php while ($cadastrar = mysqli_fetch_assoc($cadastrar_prato)) { ?>
+                    <tr>
+                        <td><?php echo $cadastrar_prato["id_prato"] ?></td>
+                        <td><?php echo $cadastrar_prato["id_usuario"] ?></td>
+                        <td><?php echo $cadastrar_prato["nome"] ?></td>
+                        <td><?php echo $cadastrar_prato["descricao"] ?></td>
+                        <td><?php echo $cadastrar_prato["preco"] ?></td>
+                        <td><?php echo $cadastrar_prato["categoria"] ?></td>
+
+                        <td>
+                            <a href="public/editar.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Editar</a>
+                            <a href="public/excluir.php?id=<?php echo $cadastrar_prato["id_prato"] ?>">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </table>
+        </div>
 </body>
 </html>
