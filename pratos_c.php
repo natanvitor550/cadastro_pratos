@@ -2,7 +2,6 @@
 
 ?>
 
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,21 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Cadastro de Usuário</title>
+    <title>Cadastro de Pratos</title>
 </head>
 <body>
-    <h1> Cadastro de Usuário </h1>
-    <label for="email">E-mail: </label>
-    <input type="email" id="email" name="email"> 
     
-    
-    <div class=flex>
-    <label for="nome"> Nome: </label>
-    <input type="text" id="nome" name="nome">
-</div>
-
-<div class=flex>
-    <input type="submit" id="enviar" name="enviar">
-</div>
 </body>
 </html>
