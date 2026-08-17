@@ -12,6 +12,15 @@
     <title>Cadastro de Pratos</title>
 </head>
 <body>
+
+<h1> Cadastro de Pratos </h1>
+
+    <label for="nome"> Nome: </label>
+    <input type="text" id="nome" name="nome">
     
+    <div class="flex">
+    <label for="descrição"> Descrição: </label>
+    <input type="text" id="descrição" name="descrição">
+</div>
 </body>
 </html>
