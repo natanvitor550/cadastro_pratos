@@ -24,7 +24,7 @@
 </div>
 
 <div class="flex">
-    <label for="preco"> Preço R$: </label>
+    <label for="preco"> Preço  R$: </label>
     <input type="number" id="preco" name="preco" min="10" max="500">
 </div>
 
