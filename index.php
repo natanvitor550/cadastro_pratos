@@ -1,6 +1,7 @@
 <?php
 include "conexao.php";
 
+
 ?>
 
 
@@ -16,24 +17,27 @@ include "conexao.php";
 <body>
     <h1> Cadastro de Usuário </h1>
     <label for="email">E-mail: </label>
-    <input type="email" id="email" name="email"> 
+    <input type="email" id="email" name="email" required> 
     
     
     <div class=flex>
     <label for="nome"> Nome: </label>
-    <input type="text" id="nome" name="nome">
+    <input type="text" id="nome" name="nome" required>
 </div>
 
+<?php 
+
+if(isset($erro)){
+    echo $echo;
+}
+?>
+
 <div class=flex>
-            <button type="submit">Enviar</button>
+            <button type="submit">Cadastar</button>
 </div>
 
 <div class=flex>
    <a href="http://localhost:8080/natan_barbosa_2026/cadastro_pratos/pratos_c.php"><button>Avançar</button></a>
-</div>
-
-<div class=flex>
-   <a href="https://www.canva.com/design/DAHSjy8j5Qg/lGGlRs9PMWMJYIEjdCoSeg/edit"><button>EU DESISTO!!!</button></a>
 </div>
 </body>
 </html>

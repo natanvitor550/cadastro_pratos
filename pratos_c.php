@@ -26,7 +26,7 @@ include "conexao.php";
 
 <div class="flex">
     <label for="preco"> Preço  R$: </label>
-    <input type="number" id="preco" name="preco" min="10" max="500">
+    <input type="number" id="preco" name="preco" step="0.01">
 </div>
 
 <div class="flex">
