@@ -29,14 +29,23 @@ $cadastrar =mysqli_fetch_assoc($resultado);
         <form action="atualizar.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $cadastrar["id"]?>">
 
-            <label for="titulo">Título:</label>
-            <input type="text" name="titulo" value="<?php echo $cadastrar["titulo"]?>">
+            <label for="name">Seu nome:</label>
+            <input type="text" name="seu nome" value="<?php echo $cadastrar["nome"]?>">
             <br>
-            <label for="autor">Autor:</label>
-            <input type="text" name="autor" value="<?php echo $cadastrar["autor"]?>">
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="<?php echo $cadastrar["email"]?>">
             <br>
-            <label for="ano">Ano de Publicação:</label>
-            <input type="number" name="ano" value="<?php echo $cadastrar["ano"]?>">
+            <label for="nome_prato">Nome do prato:</label>
+            <input type="text" name="nome_prato" value="<?php echo $cadastrar["nome_p"]?>">
+            <br>
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" value="<?php echo $cadastrar["descricao"]?>">
+            <br>
+            <label for="preco">Preço:</label>
+            <input type="float" name="preco" value="<?php echo $cadastrar["preco"]?>">
+            <br>
+            <label for="categoria">Categoria:</label>
+            <input type="text" name="categoria" value="<?php echo $cadastrar["categoria"]?>">
             <br>
             <button type="submit">Atualizar</button>
         </form>
