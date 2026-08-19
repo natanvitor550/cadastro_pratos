@@ -37,9 +37,11 @@ include "conexao.php";
             <h2> Cadastrados</h2>
             <table>
                 <tr>
-                    <th>ID_Prato</th>
-                    <th>ID_Usuário</th>
+                    <th>ID Usuário</th>
                     <th>Nome</th>
+                    <th>Email</th>
+                    <th>ID Prato</th>
+                    <th>Nome Prato</th>
                     <th>Descrição</th>
                     <th>Preço</th>
                     <th>Categoria</th>
